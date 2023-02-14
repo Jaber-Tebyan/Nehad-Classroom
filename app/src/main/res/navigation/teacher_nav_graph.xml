@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_nav_graph"
+    app:startDestination="@id/teacherDefaultFragment">
+
+    <fragment
+        android:id="@+id/teacherSendTaskFragment"
+        android:name="com.tebyan.nehadclassroom.TeacherSendTaskFragment"
+        android:label="fragment_send_task"
+        tools:layout="@layout/fragment_teacher_send_task">
+        <action
+            android:id="@+id/action_sendTaskFragment_to_teacherDefaultFragment"
+            app:destination="@id/teacherDefaultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherDefaultFragment"
+        android:name="com.tebyan.nehadclassroom.TeacherDefaultFragment"
+        android:label="fragment_teacher_default"
+        tools:layout="@layout/fragment_teacher_default">
+        <action
+            android:id="@+id/action_teacherDefaultFragment_to_sendTaskFragment"
+            app:destination="@id/teacherSendTaskFragment" />
+        <action
+            android:id="@+id/action_teacherDefaultFragment_to_teacherAnnouncementSendFragment"
+            app:destination="@id/teacherAnnouncementSendFragment" />
+        <action
+            android:id="@+id/action_teacherDefaultFragment_to_aboutDeveloperFragment"
+            app:destination="@id/aboutDeveloperFragment" />
+        <action
+            android:id="@+id/action_teacherDefaultFragment_to_teacherTasksInformationFragment"
+            app:destination="@id/teacherTasksInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherAnnouncementSendFragment"
+        android:name="com.tebyan.nehadclassroom.TeacherAnnouncementSendFragment"
+        android:label="fragment_teacher_announcement_send"
+        tools:layout="@layout/fragment_teacher_announcement_send" >
+        <action
+            android:id="@+id/action_teacherAnnouncementSendFragment_to_teacherDefaultFragment"
+            app:destination="@id/teacherDefaultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutDeveloperFragment"
+        android:name="com.tebyan.nehadclassroom.AboutDeveloperFragment"
+        android:label="fragment_about_developer"
+        tools:layout="@layout/fragment_about_developer" >
+        <action
+            android:id="@+id/action_aboutDeveloperFragment_to_teacherDefaultFragment"
+            app:destination="@id/teacherDefaultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherTasksInformationFragment"
+        android:name="com.tebyan.nehadclassroom.TeacherTasksInformationFragment"
+        android:label="fragment_teacher_tasks_information"
+        tools:layout="@layout/fragment_teacher_tasks_information" >
+        <action
+            android:id="@+id/action_teacherTasksInformationFragment_to_teacherDefaultFragment"
+            app:destination="@id/teacherDefaultFragment" />
+    </fragment>
+</navigation>

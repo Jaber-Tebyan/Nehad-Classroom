@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/teacher_drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherActivity">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+
+            android:layout_marginBottom="?actionBarSize"
+            app:navGraph="@navigation/teacher_nav_graph"
+            tools:layout="@layout/fragment_teacher_default" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="bottom"
+        app:fabAlignmentMode="end"
+        app:backgroundTint="@color/non_saturated_green"
+        app:elevation="100dp"
+        app:hideOnScroll="false"
+        app:layout_behavior="com.google.android.material.bottomappbar.BottomAppBar$Behavior"
+        app:fabAnimationMode="slide"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/send_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="60dp"
+        app:layout_anchor="@id/bottom_app_bar"
+        android:src="@drawable/ic_baseline_send_24"
+        app:backgroundTint="@color/vibrant_blue"
+        android:contentDescription="Send-Message" />
+
+
+        <com.google.android.material.card.MaterialCardView
+
+
+            android:id="@+id/card_view"
+            android:backgroundTint="#1E3B5B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:behavior_hideable="true"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="10dp"
+            android:elevation="4dp"
+            app:cardMaxElevation="10dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <include
+
+                android:id="@+id/include_bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                layout="@layout/include_sub_category_bottom_sheet"
+                android:visibility="gone"
+                />
+            <include
+                android:id="@+id/include_send_message_bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                
+                layout="@layout/include_send_announcement_bottom_sheet_view"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView
+        
+        android:background="@color/vibrant_blue"
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/teacher_navigation_menu"
+        app:headerLayout="@layout/nav_header"
+        />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

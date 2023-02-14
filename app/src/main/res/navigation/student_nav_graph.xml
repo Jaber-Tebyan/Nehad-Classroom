@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/studentDefaultFragment">
+    <fragment
+        android:id="@+id/studentDefaultFragment"
+        android:name="com.tebyan.nehadclassroom.StudentDefaultFragment"
+        android:label="fragment_student_default"
+        tools:layout="@layout/fragment_student_default" >
+        <action
+            android:id="@+id/action_studentDefaultFragment_to_inboxFragment"
+            app:destination="@id/inboxFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_studentDefaultFragment_to_aboutDeveloperFragment2"
+            app:destination="@id/aboutDeveloperFragment2" />
+        <action
+            android:id="@+id/action_studentDefaultFragment_to_studentTaskFragment"
+            app:destination="@id/studentTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="com.tebyan.nehadclassroom.MessagesInboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_messages_inbox" >
+        <action
+            android:id="@+id/action_inboxFragment_to_studentDefaultFragment"
+            app:destination="@id/studentDefaultFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_studentDefaultFragment"
+        app:destination="@id/studentDefaultFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <fragment
+        android:id="@+id/aboutDeveloperFragment2"
+        android:name="com.tebyan.nehadclassroom.AboutDeveloperFragment"
+        android:label="fragment_about_developer"
+        tools:layout="@layout/fragment_about_developer" >
+        <action
+            android:id="@+id/action_aboutDeveloperFragment2_to_studentDefaultFragment"
+            app:destination="@id/studentDefaultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentTaskFragment"
+        android:name="com.tebyan.nehadclassroom.StudentTaskFragment"
+        android:label="fragment_student_task"
+        tools:layout="@layout/fragment_student_task" >
+        <action
+            android:id="@+id/action_studentTaskFragment_to_studentDefaultFragment"
+            app:destination="@id/studentDefaultFragment" />
+    </fragment>
+</navigation>

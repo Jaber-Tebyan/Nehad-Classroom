@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group>
+        <item android:title="@string/account_info">
+            <menu>
+
+                <item
+                    android:id="@+id/my_information"
+                    android:title="@string/my_information" />
+                <item
+                    android:id="@+id/sign_out_menu_item"
+                    android:title="@string/sign_out"
+                    />
+                <item
+                    android:id="@+id/teacher_info_menu_item"
+                    android:title="@string/teacher_info"
+                    />
+            </menu>
+        </item>
+    </group>
+    <group>
+        <item android:title="@string/inbox">
+            <menu>
+                <item
+                    android:title="@string/tasks"
+                    android:id="@+id/tasks_menu_item"
+                    />
+                <item
+                    android:title="@string/messages"
+                    android:id="@+id/messages_menu_item"
+                    />
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="@string/developer">
+            <menu>
+                <item
+                    android:id="@+id/about_developer_menu_item"
+                    android:title="@string/about_developer" />
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Nehad Classroom</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="inbox">Inbox</string>
+    <string name="title_activity_main_activityasdfasdfasdfdsafsfdasdfasdfasdfasd">
+        MainActivityasdfasdfasdfdsafsfdasdfasdfasdfasd
+    </string>
+    <string name="closeNavigation">Close navigation</string>
+    <string name="openNavigation">Open Navigation</string>
+    <string name="about_developer">About Developer</string>
+    <string name="sign_out">Sign out</string>
+    <string name="my_information">My Information</string>
+    <string name="students_information">Students Information</string>
+    <string name="send_announcement">Send Announcement</string>
+    <string name="send_task">Send Task</string>
+    <string name="main_task_name">Main task name</string>
+    <string name="add_sub_categories">Add sub categories</string>
+    <string name="add">Add</string>
+    <string name="subtext">SubText</string>
+    <string name="message">Message</string>
+    <string name="teacher_info">Teacher Info</string>
+    <string name="account_info">Account Info</string>
+    <string name="developer">Developer</string>
+    <string name="tasks">Tasks</string>
+    <string name="messages">Messages</string>
+    <string name="task_name">Task name</string>
+    <string name="teacher_id">Teacher-ID</string>
+    <string name="login_rightaway">Login_RightAway</string>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "616485730421",
+    "project_id": "nehad-classroom",
+    "storage_bucket": "nehad-classroom.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616485730421:android:5a7346a06273dc142a203c",
+        "android_client_info": {
+          "package_name": "com.tebyan.nehadclassroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616485730421-mgveku439s57dp217oilcpdrned0ot8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tebyan.nehadclassroom",
+            "certificate_hash": "9318d04bbab4147e4b05106b311dcea2f524f416"
+          }
+        },
+        {
+          "client_id": "616485730421-t81liqiv6ft7ft42dq8pf9etftrla7pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8MrSdJ_zfDaOxz14G4X0r2RTw889L4UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616485730421-t81liqiv6ft7ft42dq8pf9etftrla7pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

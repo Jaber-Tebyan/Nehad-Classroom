@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    shadow     -->
+    <item>
+
+        <shape>
+            <solid android:color="@color/black"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/material_dynamic_secondary80"/>
+
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".SignupFragment">
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/sign_up"
+
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            app:startIconTint="@color/white"
+            android:id="@+id/emailTextInputLayout"
+
+            android:layout_width="match_parent"
+            android:hint="@string/email"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+
+
+
+            android:layout_margin="16dp"
+
+
+
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailTextInputEditText"
+                android:textColor="@color/less_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_width="match_parent"
+            android:hint="@string/password"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle"
+
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/less_white"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/teacher_id_text_input_layout"
+        android:layout_width="match_parent"
+        android:hint="@string/teacher_id"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/less_white"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</LinearLayout>
